@@ -2,15 +2,10 @@
 <html>
 <head>
     <title>URL Shortener</title>
-    <link rel="stylesheet" href="{{ css_url }}">
+    
 </head>
 <body>
     <h1>URL Shortener</h1>
-
-    <form action="/shorten" method="POST">
-        <input type="text" name="url" placeholder="Enter a URL" required>
-        <input type="submit" value="Shorten">
-    </form>
 
     {% if short_url %}
         <p>Shortened URL: <a href="{{ short_url }}">{{ short_url }}</a></p>
